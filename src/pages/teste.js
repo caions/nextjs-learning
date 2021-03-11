@@ -7,5 +7,4 @@ export default function Teste(){
     <h3>Conteudo da pagina</h3>  
   </>
   )
-  
 }
