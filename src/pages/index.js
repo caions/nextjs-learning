@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
 import styles from '../../styles/Home.module.css'
 import axios from 'axios'
-import teste from "./teste"
 import {Estilo} from './styled'
+import { Button } from '@material-ui/core'
 
 export default function Home({isAuth}) {
 
@@ -30,10 +29,17 @@ export default function Home({isAuth}) {
             Bem vindo <a>{isAuth[0]}</a>, você esta logado<br/>
               </Estilo>
             <br/>
-        </h1>
-        <a href="./teste">teste</a>
-            <button onClick={((e)=>e.target(teste))}>Sign Out</button>
-            </>
+            </h1>
+        <Button variant="contained" color="primary">
+          Login
+        </Button>
+        <br/>
+        <Button variant="contained" color="warning">
+          Register
+        </Button>
+        <h1><a href="./teste">teste</a></h1>
+        <h1><a href="./table">table</a></h1>
+        </>
           )
         }        
         
